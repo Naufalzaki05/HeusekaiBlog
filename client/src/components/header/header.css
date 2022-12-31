@@ -1,0 +1,53 @@
+.header {
+  margin-top: 35px;
+}
+.headerWrapper {
+  padding-top: 30px;
+}
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.headerTitleSm {
+  font-family: "Lora", serif;
+  color: rgb(66, 66, 66);
+  font-size: 18px;
+  position: absolute;
+  top: -40px;
+  letter-spacing: 0.05em;
+}
+
+.headerTitleLg {
+  font-family: "Lora", serif;
+  background-clip: border-box;
+  color: rgb(227, 28, 245);
+  font-size: 90px;
+  font-weight: 600;
+  font-style: normal;
+  position: absolute;
+  top: -20px;
+  font-style: italic;
+}
+.headerImg {
+  margin-top: 35px;
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  background: linear-gradient(rgba(0,0,0,0.5) 20%,rgba(0, 0, 0, 0.048) 67%),
+  url("https://img.freepik.com/free-vector/bloggers-influencers-writing-articles-posting-content-cartoon-illustration_74855-14289.jpg?w=740&t=st=1671807137~exp=1671807737~hmac=08648290b3d7d6c5dd4b3cf56d473881ed6cd8742f13b86e3ea44def41332944");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .headerTitleLg{
+    font-size: 50px;
+    top: 6px
+  }
+  .headerImg{
+    background-position: bottom center;
+  }
+}

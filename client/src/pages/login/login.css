@@ -1,0 +1,91 @@
+.login {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 33.3%,
+      rgba(0, 0, 0, 0.1) 67%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg?w=740&t=st=1671932255~exp=1671932855~hmac=83e4aeee14e7d6e034286dbe956bfbf5b54b3b8013b0d34fb7e17e17ea147a5a");
+}
+
+.loginWrapper {
+  width: 25%;
+  min-width: 275px;
+  height: 55%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(5, 71, 71);
+  margin-top: 20px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.loginLabel {
+  font-size: 18px;
+  margin: 15px 0;
+}
+.loginInput {
+  padding: 5px;
+  width: 100%;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.loginInput:focus {
+  outline: none;
+}
+.loginBtn {
+  padding: 7px;
+  height: 50%;
+  margin-top: 20px;
+  border: none;
+  color: #fff;
+  background-color: rgb(241, 24, 213);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.loginBtn:disabled {
+  cursor: not-allowed;
+}
+.loginRegisterBtn {
+  align-self: flex-start;
+  margin: 20px 20px 0 0;
+  padding: 11px;
+  background-color: rgb(26, 23, 253);
+  font-size: 17px;
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btns {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .loginWrapper{
+    margin-left:50px
+  }
+  .loginRegisterBtn{
+    position: absolute;
+  right: 10px
+  }
+}
